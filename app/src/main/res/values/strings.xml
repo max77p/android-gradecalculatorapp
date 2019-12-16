@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">shansGradeCalculator</string>
+    <string name="grade_calculator">Grade Calculator</string>
+    <string name="ios">iOS</string>
+    <string name="android">Android</string>
+    <string name="swift">Swift</string>
+    <string name="java">Java</string>
+    <string name="min">MIN</string>
+    <string name="avg">AVG</string>
+    <string name="max">MAX</string>
+</resources>

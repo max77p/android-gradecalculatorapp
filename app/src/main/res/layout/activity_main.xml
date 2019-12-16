@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/grade_calculator"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/ios" />
+            <EditText
+                android:id="@+id/iosField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/android" />
+            <EditText
+                android:id="@+id/androidField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/swift" />
+            <EditText
+                android:id="@+id/swiftField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/java" />
+            <EditText
+                android:id="@+id/javaField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/minBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="findMin"
+            android:text="@string/min"/>
+        <Button
+            android:id="@+id/avgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:onClick="findAvg"
+            android:text="@string/avg"/>
+        <Button
+            android:id="@+id/maxBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="findMax"
+            android:text="@string/max"/>
+    </LinearLayout>
+
+</LinearLayout>
